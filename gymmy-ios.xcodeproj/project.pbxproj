@@ -223,8 +223,6 @@
 			mainGroup = 978EA6EF1903A7C100651DD3;
 			productRefGroup = 978EA6F91903A7C100651DD3 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				978EA6F71903A7C100651DD3 /* gymmy-ios */,
@@ -443,6 +441,19 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gymmy-ios/gymmy-ios-Prefix.pch";
 				INFOPLIST_FILE = "gymmy-ios/gymmy-ios-Info.plist";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/OCHamcrest\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/ReactiveCocoa\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/ReactiveCocoa/ReactiveCocoa\"",
+					"-Wall",
+					"-Wextra",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -457,6 +468,19 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gymmy-ios/gymmy-ios-Prefix.pch";
 				INFOPLIST_FILE = "gymmy-ios/gymmy-ios-Info.plist";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/OCHamcrest\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/ReactiveCocoa\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/ReactiveCocoa/ReactiveCocoa\"",
+					"-Wall",
+					"-Wextra",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -523,6 +547,7 @@
 				978EA7261903A7C100651DD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		978EA7271903A7C100651DD3 /* Build configuration list for PBXNativeTarget "gymmy-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +556,7 @@
 				978EA7291903A7C100651DD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
