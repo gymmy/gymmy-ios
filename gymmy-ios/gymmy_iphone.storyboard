@@ -17,10 +17,15 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mKK-Yi-2V6">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="Vdp-ak-pso">
+                                    <rect key="frame" x="0.0" y="182" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WorkoutCellIdentifier" rowHeight="96" id="lX5-D8-4jU" customClass="GYMWorkoutTableViewCell">
                                         <rect key="frame" x="0.0" y="86" width="320" height="96"/>
@@ -91,13 +96,30 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D7O-5q-MMP">
+                                <rect key="frame" x="75" y="482" width="172" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.44705882349999998" green="0.90980392160000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Add new workout">
+                                            <attributes>
+                                                <color key="NSColor" red="0.44705882352941173" green="0.90980392156862744" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="21" name="AvenirNext-Medium"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="mKK-Yi-2V6" secondAttribute="trailing" id="DAC-xv-CmR"/>
+                            <constraint firstAttribute="centerX" secondItem="D7O-5q-MMP" secondAttribute="centerX" constant="-0.5" id="M2Z-iV-XyQ"/>
                             <constraint firstItem="mKK-Yi-2V6" firstAttribute="top" secondItem="BYD-wf-rcQ" secondAttribute="top" id="R2y-BI-Hdr"/>
-                            <constraint firstItem="1Is-Q0-owS" firstAttribute="top" secondItem="mKK-Yi-2V6" secondAttribute="bottom" id="SXa-LY-sTv"/>
+                            <constraint firstItem="1Is-Q0-owS" firstAttribute="top" secondItem="mKK-Yi-2V6" secondAttribute="bottom" constant="100" id="SXa-LY-sTv"/>
                             <constraint firstItem="mKK-Yi-2V6" firstAttribute="leading" secondItem="BYD-wf-rcQ" secondAttribute="leading" id="YWV-qc-HAx"/>
+                            <constraint firstItem="1Is-Q0-owS" firstAttribute="top" secondItem="D7O-5q-MMP" secondAttribute="bottom" constant="45" id="iZj-Mn-cOC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NY4-9n-ldg"/>
@@ -109,7 +131,7 @@
             </objects>
             <point key="canvasLocation" x="431" y="120"/>
         </scene>
-        <!--Workout Exercises ListVC - Exercises-->
+        <!--Exercise List View Controller - Exercises-->
         <scene sceneID="vXk-nv-cYf">
             <objects>
                 <viewController id="uMJ-zR-tAC" customClass="GYMExerciseListViewController" sceneMemberID="viewController">
