@@ -255,7 +255,7 @@ extern const NSInteger RACSignalErrorNoMatchingCase;
 ///          A crash can result if `object` is deallocated concurrently on
 ///          another thread within a window of time between a value being sent
 ///          on this signal and immediately prior to the invocation of
-///          -setValue:forKeyPath:, which sets the property. To prevent this,
+///          -setValue:forKeyPath:, which numberOfSets the property. To prevent this,
 ///          ensure `object` is deallocated on the same thread the receiver
 ///          sends on, or ensure that the returned disposable is disposed of
 ///          before `object` deallocates.

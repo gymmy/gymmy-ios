@@ -18,7 +18,7 @@
 ///
 /// Returns a RACChannelTerminal that sends the receiver's currently selected
 /// segment's index whenever the UIControlEventValueChanged control event is
-/// fired, and sets the selected segment index to the values it receives.
+/// fired, and numberOfSets the selected segment index to the values it receives.
 - (RACChannelTerminal *)rac_newSelectedSegmentIndexChannelWithNilValue:(NSNumber *)nilValue;
 
 @end

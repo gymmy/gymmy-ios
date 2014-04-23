@@ -1,4 +1,5 @@
 PODS:
+  - FLKAutoLayout (0.1.1)
   - OCHamcrest (3.0.1)
   - ReactiveCocoa (2.3):
     - ReactiveCocoa/Core
@@ -8,10 +9,12 @@ PODS:
   - ReactiveCocoa/no-arc (2.3)
 
 DEPENDENCIES:
+  - FLKAutoLayout
   - OCHamcrest
   - ReactiveCocoa
 
 SPEC CHECKSUMS:
+  FLKAutoLayout: fc04b932009174d4118ef4bda9dc8fedf1369efc
   OCHamcrest: 782c52ae8c673e5d6060a65005cfd26d20d519ba
   ReactiveCocoa: 1f6265f9d521923d3efcc37b00722cefc16df269
 

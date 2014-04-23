@@ -17,7 +17,7 @@
 /// nilValue - The value to set when the terminal receives `nil`.
 ///
 /// Returns a RACChannelTerminal that sends the receiver's value whenever the
-/// UIControlEventValueChanged control event is fired, and sets the value to the
+/// UIControlEventValueChanged control event is fired, and numberOfSets the value to the
 /// values it receives.
 - (RACChannelTerminal *)rac_newValueChannelWithNilValue:(NSNumber *)nilValue;
 

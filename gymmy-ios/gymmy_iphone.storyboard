@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="91f-bV-M5A">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Gymmy Main View Controller-->
+        <scene sceneID="deI-Nw-9VX">
+            <objects>
+                <viewController id="r0o-Kd-2kZ" userLabel="Gymmy Main View Controller" customClass="GYMMainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="95c-T1-aVl"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Is-Q0-owS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BYD-wf-rcQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mKK-Yi-2V6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WorkoutCellIdentifier" rowHeight="96" id="lX5-D8-4jU" customClass="GYMWorkoutTableViewCell">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="96"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lX5-D8-4jU" id="ICR-xU-PgS">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="95"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6v-Jy-RQs">
+                                                    <rect key="frame" x="30" y="10" width="247" height="41"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="WorkoutName">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9L-eP-Udg">
+                                                    <rect key="frame" x="30" y="51" width="47" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="1234">
+                                                            <attributes>
+                                                                <color key="NSColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                                                <font key="NSFont" size="20" name="AvenirNext-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oM-Mh-qHS">
+                                                    <rect key="frame" x="85" y="51" width="84" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="exercises">
+                                                            <attributes>
+                                                                <color key="NSColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                                                <font key="NSFont" size="20" name="AvenirNext-Regular"/>
+                                                                <font key="NSOriginalFont" size="20" name="AvenirNext-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="a9L-eP-Udg" firstAttribute="leading" secondItem="x6v-Jy-RQs" secondAttribute="leading" id="8wG-Tz-CZP"/>
+                                                <constraint firstItem="x6v-Jy-RQs" firstAttribute="top" secondItem="ICR-xU-PgS" secondAttribute="top" constant="10" id="Vno-2k-tTy"/>
+                                                <constraint firstItem="9oM-Mh-qHS" firstAttribute="leading" secondItem="a9L-eP-Udg" secondAttribute="trailing" constant="8" symbolic="YES" id="W2W-UZ-aO6"/>
+                                                <constraint firstAttribute="trailing" secondItem="x6v-Jy-RQs" secondAttribute="trailing" constant="10" id="bMg-Ry-ZIM"/>
+                                                <constraint firstItem="9oM-Mh-qHS" firstAttribute="top" secondItem="x6v-Jy-RQs" secondAttribute="bottom" id="dyC-5W-ncT"/>
+                                                <constraint firstItem="a9L-eP-Udg" firstAttribute="top" secondItem="x6v-Jy-RQs" secondAttribute="bottom" id="xBW-TJ-5bH"/>
+                                                <constraint firstItem="x6v-Jy-RQs" firstAttribute="leading" secondItem="ICR-xU-PgS" secondAttribute="leading" constant="30" id="yQf-X4-dnm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="numberOfExercisesString" destination="a9L-eP-Udg" id="f8k-lf-xCS"/>
+                                            <outlet property="workoutName" destination="x6v-Jy-RQs" id="7ub-Pv-BFs"/>
+                                            <segue destination="uMJ-zR-tAC" kind="push" identifier="ExercisListSegue" id="AHJ-QC-41d"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mKK-Yi-2V6" secondAttribute="trailing" id="DAC-xv-CmR"/>
+                            <constraint firstItem="mKK-Yi-2V6" firstAttribute="top" secondItem="BYD-wf-rcQ" secondAttribute="top" id="R2y-BI-Hdr"/>
+                            <constraint firstItem="1Is-Q0-owS" firstAttribute="top" secondItem="mKK-Yi-2V6" secondAttribute="bottom" id="SXa-LY-sTv"/>
+                            <constraint firstItem="mKK-Yi-2V6" firstAttribute="leading" secondItem="BYD-wf-rcQ" secondAttribute="leading" id="YWV-qc-HAx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NY4-9n-ldg"/>
+                    <connections>
+                        <outlet property="tableView" destination="mKK-Yi-2V6" id="cKj-Ys-yh5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6MH-BQ-2qy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="431" y="120"/>
+        </scene>
+        <!--Workout Exercises ListVC - Exercises-->
+        <scene sceneID="vXk-nv-cYf">
+            <objects>
+                <viewController id="uMJ-zR-tAC" customClass="GYMWorkoutExercisesListVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tj5-ye-ODx"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Wg-tD-IkD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZZM-3E-tzG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="79" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Prs-2F-TwG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ExerciseCellIdentifier" rowHeight="79" id="mVs-ms-oaL" customClass="GYMExerciseTableViewCell">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="79"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mVs-ms-oaL" id="1D5-TA-1p7">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="78"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWH-Sh-7Ln">
+                                                    <rect key="frame" x="30" y="10" width="214" height="41"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="ExerciseName">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1B-uE-r35">
+                                                    <rect key="frame" x="30" y="42" width="12" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="3">
+                                                            <attributes>
+                                                                <color key="NSColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                                                <font key="NSFont" size="20" name="AvenirNext-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0h-5h-zvj">
+                                                    <rect key="frame" x="44" y="42" width="10" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="x">
+                                                            <attributes>
+                                                                <color key="NSColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                                                <font key="NSFont" size="20" name="AvenirNext-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vys-lF-jUU">
+                                                    <rect key="frame" x="56" y="42" width="12" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="8">
+                                                            <attributes>
+                                                                <color key="NSColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                                                <font key="NSFont" size="20" name="AvenirNext-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q42-v3-g3Y">
+                                                    <rect key="frame" x="252" y="19" width="35" height="41"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="96">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vys-lF-jUU" firstAttribute="top" secondItem="uWH-Sh-7Ln" secondAttribute="bottom" constant="-9" id="5VD-LS-ulu"/>
+                                                <constraint firstItem="vys-lF-jUU" firstAttribute="leading" secondItem="u0h-5h-zvj" secondAttribute="trailing" constant="2" id="6WW-Qy-9Pl"/>
+                                                <constraint firstAttribute="trailing" secondItem="Q42-v3-g3Y" secondAttribute="trailing" id="8fQ-WR-EqM"/>
+                                                <constraint firstItem="uWH-Sh-7Ln" firstAttribute="top" secondItem="1D5-TA-1p7" secondAttribute="top" constant="10" id="CXt-ZU-7o9"/>
+                                                <constraint firstItem="O1B-uE-r35" firstAttribute="top" secondItem="uWH-Sh-7Ln" secondAttribute="bottom" constant="-9" id="KSs-Kp-Auh"/>
+                                                <constraint firstItem="Q42-v3-g3Y" firstAttribute="leading" secondItem="uWH-Sh-7Ln" secondAttribute="trailing" constant="8" symbolic="YES" id="gWh-BW-fOK"/>
+                                                <constraint firstItem="uWH-Sh-7Ln" firstAttribute="leading" secondItem="1D5-TA-1p7" secondAttribute="leading" constant="30" id="gaX-Kr-n0K"/>
+                                                <constraint firstItem="u0h-5h-zvj" firstAttribute="top" secondItem="uWH-Sh-7Ln" secondAttribute="bottom" constant="-9" id="jND-7b-JVx"/>
+                                                <constraint firstItem="O1B-uE-r35" firstAttribute="leading" secondItem="uWH-Sh-7Ln" secondAttribute="leading" id="lyk-VE-L7F"/>
+                                                <constraint firstAttribute="centerY" secondItem="Q42-v3-g3Y" secondAttribute="centerY" id="n1p-va-gJ6"/>
+                                                <constraint firstItem="u0h-5h-zvj" firstAttribute="leading" secondItem="O1B-uE-r35" secondAttribute="trailing" constant="2" id="yRv-IS-cC8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="durationLabel" destination="Q42-v3-g3Y" id="x0M-sw-igb"/>
+                                            <outlet property="exerciseNameLabel" destination="uWH-Sh-7Ln" id="oPo-ga-tx7"/>
+                                            <outlet property="numberOfRepetitionsLabel" destination="vys-lF-jUU" id="MwR-Lk-Jh7"/>
+                                            <outlet property="numberOfSetsLabel" destination="O1B-uE-r35" id="qFb-XK-aln"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Prs-2F-TwG" firstAttribute="leading" secondItem="ZZM-3E-tzG" secondAttribute="leading" id="DJb-9I-3bq"/>
+                            <constraint firstAttribute="trailing" secondItem="Prs-2F-TwG" secondAttribute="trailing" id="HQE-En-ox9"/>
+                            <constraint firstItem="Prs-2F-TwG" firstAttribute="top" secondItem="ZZM-3E-tzG" secondAttribute="top" id="k2k-m0-1de"/>
+                            <constraint firstItem="0Wg-tD-IkD" firstAttribute="top" secondItem="Prs-2F-TwG" secondAttribute="bottom" id="kAR-lA-fbz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Exercises" id="cXy-Na-mZv">
+                        <barButtonItem key="backBarButtonItem" title="Workouts" id="t1A-AC-gah"/>
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="Wq6-eD-NYf">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Prs-2F-TwG" id="DHu-fS-WeH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MPn-c5-eg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="114"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eFO-8E-99g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="91f-bV-M5A" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="l3O-4o-0hS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="r0o-Kd-2kZ" kind="relationship" relationship="rootViewController" id="qkG-0U-dc3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Il6-KK-oIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8" y="114"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

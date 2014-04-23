@@ -7,7 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65A3E10EF2C7DDDB6EEEBF2C /* GYMExerciseVCViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E626D0E67641807E63A5 /* GYMExerciseVCViewModel.m */; };
+		65A3E1327C07787D577A39C6 /* GYMExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E840933C5CF27A410878 /* GYMExercise.m */; };
+		65A3E21483AA17E37D3B6051 /* PFIArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E3CE535BE3C431C61195 /* PFIArrayDataSource.m */; };
+		65A3E2FC3BBD0C65962B09D3 /* GYMMainVCViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E6CEF896ED4B04FF7370 /* GYMMainVCViewModel.m */; };
+		65A3E8F68BCEED5CA4897CB9 /* UIColor+GYMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3ECCB0EB578B4620277B0 /* UIColor+GYMColor.m */; };
+		65A3EDD696E58256C9936089 /* GYMWorkout.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3EFAF80AB71E58E92CB07 /* GYMWorkout.m */; };
+		65A3EE998EA00AF2D96E867A /* GYMWorkoutExercisesListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E3576EFA3309924318C1 /* GYMWorkoutExercisesListVC.m */; };
+		65A3EF28E9D90279F047A8BE /* GYMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3EEE39DF8FE4FDC227C25 /* GYMMainViewController.m */; };
+		65A3EFAAF6CD2787A203DDB3 /* GYMExerciseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E5EB0E69BA536B5457B0 /* GYMExerciseTableViewCell.m */; };
+		65A3EFB865AEE75E70EABCA6 /* GYMWorkoutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E70BF0EDC40E71AF5072 /* GYMWorkoutTableViewCell.m */; };
+		65A3EFD0C63513ADDD44818D /* GYMNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3EAFFC6280D1636263BC1 /* GYMNavigationViewController.m */; };
 		65AE4D0AFD4E45D99344BF03 /* libPods-gymmy-iosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C32530DC7C114ED09F60FDC4 /* libPods-gymmy-iosTests.a */; };
+		970AB8B81903C196008DDA75 /* gymmy_iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970AB8B71903C196008DDA75 /* gymmy_iphone.storyboard */; };
 		978EA6FC1903A7C100651DD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 978EA6FB1903A7C100651DD3 /* Foundation.framework */; };
 		978EA6FE1903A7C100651DD3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 978EA6FD1903A7C100651DD3 /* CoreGraphics.framework */; };
 		978EA7001903A7C100651DD3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 978EA6FF1903A7C100651DD3 /* UIKit.framework */; };
@@ -34,6 +46,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65A3E02689A6418E85CB33D4 /* GYMWorkout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMWorkout.h; sourceTree = "<group>"; };
+		65A3E3576EFA3309924318C1 /* GYMWorkoutExercisesListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMWorkoutExercisesListVC.m; sourceTree = "<group>"; };
+		65A3E3CE535BE3C431C61195 /* PFIArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFIArrayDataSource.m; sourceTree = "<group>"; };
+		65A3E5EB0E69BA536B5457B0 /* GYMExerciseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMExerciseTableViewCell.m; sourceTree = "<group>"; };
+		65A3E5EE837B5DFECE8CA670 /* PFIArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFIArrayDataSource.h; sourceTree = "<group>"; };
+		65A3E626D0E67641807E63A5 /* GYMExerciseVCViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMExerciseVCViewModel.m; sourceTree = "<group>"; };
+		65A3E6CEF896ED4B04FF7370 /* GYMMainVCViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMMainVCViewModel.m; sourceTree = "<group>"; };
+		65A3E70BF0EDC40E71AF5072 /* GYMWorkoutTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMWorkoutTableViewCell.m; sourceTree = "<group>"; };
+		65A3E80391FEF0B7489F8632 /* GYMNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMNavigationViewController.h; sourceTree = "<group>"; };
+		65A3E840933C5CF27A410878 /* GYMExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMExercise.m; sourceTree = "<group>"; };
+		65A3E87EB1EC7545566665E7 /* GYMWorkoutTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMWorkoutTableViewCell.h; sourceTree = "<group>"; };
+		65A3EA471A6E97522480ED50 /* GYMExercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMExercise.h; sourceTree = "<group>"; };
+		65A3EAFFC6280D1636263BC1 /* GYMNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMNavigationViewController.m; sourceTree = "<group>"; };
+		65A3ECCB0EB578B4620277B0 /* UIColor+GYMColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GYMColor.m"; sourceTree = "<group>"; };
+		65A3ED491F39839E2289BA22 /* GYMMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMMainViewController.h; sourceTree = "<group>"; };
+		65A3EE0706C854363E48A5DD /* GYMMainVCViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMMainVCViewModel.h; sourceTree = "<group>"; };
+		65A3EE7EF6365FD615CC0578 /* GYMExerciseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMExerciseTableViewCell.h; sourceTree = "<group>"; };
+		65A3EE80F79BD783DFC88AA7 /* UIColor+GYMColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GYMColor.h"; sourceTree = "<group>"; };
+		65A3EEE39DF8FE4FDC227C25 /* GYMMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMMainViewController.m; sourceTree = "<group>"; };
+		65A3EF8DEF37A12B967F84D8 /* GYMExerciseVCViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMExerciseVCViewModel.h; sourceTree = "<group>"; };
+		65A3EFAF80AB71E58E92CB07 /* GYMWorkout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMWorkout.m; sourceTree = "<group>"; };
+		65A3EFDD69F04AA4E1419CE1 /* GYMWorkoutExercisesListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMWorkoutExercisesListVC.h; sourceTree = "<group>"; };
+		970AB8B71903C196008DDA75 /* gymmy_iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = gymmy_iphone.storyboard; sourceTree = "<group>"; };
 		978EA6F81903A7C100651DD3 /* gymmy-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gymmy-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		978EA6FB1903A7C100651DD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		978EA6FD1903A7C100651DD3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +117,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65A3EB7301A9A9AED53E429A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65A3EFAF80AB71E58E92CB07 /* GYMWorkout.m */,
+				65A3E02689A6418E85CB33D4 /* GYMWorkout.h */,
+				65A3E840933C5CF27A410878 /* GYMExercise.m */,
+				65A3EA471A6E97522480ED50 /* GYMExercise.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65A3ED4D4582BF14BC3DF04F /* ExerciseVC */ = {
+			isa = PBXGroup;
+			children = (
+				65A3EFDD69F04AA4E1419CE1 /* GYMWorkoutExercisesListVC.h */,
+				65A3E3576EFA3309924318C1 /* GYMWorkoutExercisesListVC.m */,
+				65A3E5EB0E69BA536B5457B0 /* GYMExerciseTableViewCell.m */,
+				65A3EE7EF6365FD615CC0578 /* GYMExerciseTableViewCell.h */,
+				65A3E626D0E67641807E63A5 /* GYMExerciseVCViewModel.m */,
+				65A3EF8DEF37A12B967F84D8 /* GYMExerciseVCViewModel.h */,
+			);
+			path = ExerciseVC;
+			sourceTree = "<group>";
+		};
+		65A3EE58B32CB3DA4FF76ACA /* Workout VC */ = {
+			isa = PBXGroup;
+			children = (
+				65A3EE0706C854363E48A5DD /* GYMMainVCViewModel.h */,
+				65A3E6CEF896ED4B04FF7370 /* GYMMainVCViewModel.m */,
+				65A3ED491F39839E2289BA22 /* GYMMainViewController.h */,
+				65A3EEE39DF8FE4FDC227C25 /* GYMMainViewController.m */,
+				65A3E87EB1EC7545566665E7 /* GYMWorkoutTableViewCell.h */,
+				65A3E70BF0EDC40E71AF5072 /* GYMWorkoutTableViewCell.m */,
+			);
+			path = "Workout VC";
+			sourceTree = "<group>";
+		};
+		65A3EF11871775F6EE75D7AE /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				65A3E5EE837B5DFECE8CA670 /* PFIArrayDataSource.h */,
+				65A3E3CE535BE3C431C61195 /* PFIArrayDataSource.m */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		65A3EF554760854F359EEE97 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				65A3ECCB0EB578B4620277B0 /* UIColor+GYMColor.m */,
+				65A3EE80F79BD783DFC88AA7 /* UIColor+GYMColor.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		978EA6EF1903A7C100651DD3 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +213,14 @@
 				978EA70B1903A7C100651DD3 /* GYMAppDelegate.m */,
 				978EA70D1903A7C100651DD3 /* Images.xcassets */,
 				978EA7021903A7C100651DD3 /* Supporting Files */,
+				970AB8B71903C196008DDA75 /* gymmy_iphone.storyboard */,
+				65A3EF554760854F359EEE97 /* Categories */,
+				65A3EF11871775F6EE75D7AE /* DataSources */,
+				65A3EB7301A9A9AED53E429A /* Model */,
+				65A3EAFFC6280D1636263BC1 /* GYMNavigationViewController.m */,
+				65A3E80391FEF0B7489F8632 /* GYMNavigationViewController.h */,
+				65A3EE58B32CB3DA4FF76ACA /* Workout VC */,
+				65A3ED4D4582BF14BC3DF04F /* ExerciseVC */,
 			);
 			path = "gymmy-ios";
 			sourceTree = "<group>";
@@ -238,6 +336,7 @@
 			files = (
 				978EA7061903A7C100651DD3 /* InfoPlist.strings in Resources */,
 				978EA70E1903A7C100651DD3 /* Images.xcassets in Resources */,
+				970AB8B81903C196008DDA75 /* gymmy_iphone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +420,17 @@
 			files = (
 				978EA70C1903A7C100651DD3 /* GYMAppDelegate.m in Sources */,
 				978EA7081903A7C100651DD3 /* main.m in Sources */,
+				65A3E8F68BCEED5CA4897CB9 /* UIColor+GYMColor.m in Sources */,
+				65A3E21483AA17E37D3B6051 /* PFIArrayDataSource.m in Sources */,
+				65A3EDD696E58256C9936089 /* GYMWorkout.m in Sources */,
+				65A3E1327C07787D577A39C6 /* GYMExercise.m in Sources */,
+				65A3EFD0C63513ADDD44818D /* GYMNavigationViewController.m in Sources */,
+				65A3E2FC3BBD0C65962B09D3 /* GYMMainVCViewModel.m in Sources */,
+				65A3EF28E9D90279F047A8BE /* GYMMainViewController.m in Sources */,
+				65A3EFB865AEE75E70EABCA6 /* GYMWorkoutTableViewCell.m in Sources */,
+				65A3EE998EA00AF2D96E867A /* GYMWorkoutExercisesListVC.m in Sources */,
+				65A3EFAAF6CD2787A203DDB3 /* GYMExerciseTableViewCell.m in Sources */,
+				65A3E10EF2C7DDDB6EEEBF2C /* GYMExerciseVCViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +563,7 @@
 					"\"${PODS_ROOT}/Headers/ReactiveCocoa/ReactiveCocoa\"",
 					"-Wall",
 					"-Wextra",
+					"-Wno-unused-parameter",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -480,6 +591,7 @@
 					"\"${PODS_ROOT}/Headers/ReactiveCocoa/ReactiveCocoa\"",
 					"-Wall",
 					"-Wextra",
+					"-Wno-unused-parameter",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
