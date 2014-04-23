@@ -5,10 +5,9 @@
 
 #import "UIView+FLKAutoLayout.h"
 #import "UIColor+GYMColor.h"
-#import "GYMNavigationViewController.h"
+#import "GYMBaseViewController.h"
 
-
-@implementation GYMNavigationViewController
+@implementation GYMBaseViewController
 
 - (void)viewDidLoad {
 	[super viewDidLoad];

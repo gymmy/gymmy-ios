@@ -4,9 +4,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PFIArrayDataSource.h"
 
+@class GYMWorkout;
 
-@interface GYMMainVCViewModel : NSObject <UITableViewDelegate>
-@property(nonatomic, strong) PFIArrayDataSource *dataSource;
+@interface GYMWorkoutVCViewModel : NSObject
+- (NSInteger)numberOfRows;
+- (GYMWorkout *)workoutAtIndexPath:(NSIndexPath *)path;
 @end
