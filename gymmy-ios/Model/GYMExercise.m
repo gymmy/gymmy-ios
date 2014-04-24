@@ -7,20 +7,20 @@
 
 
 @implementation GYMExercise
-- (instancetype)initWithName:(NSString *)name numeberOfSets:(NSInteger)numOfSets numberOfRepetitions:(NSInteger)numOfrepetitions duration:(NSInteger)duration {
+- (instancetype)initWithName:(NSString *)name numeberOfSets:(NSInteger)numOfSets numberOfRepetitions:(NSInteger)numOfRepetitions weight:(NSInteger)weight {
 	self = [super init];
 	if (!self) return nil;
 
 	self.name = name;
 	self.numberOfSets = numOfSets;
-	self.numberOfRepetitions = numOfrepetitions;
-	self.duration = duration;
+	self.numberOfRepetitions = numOfRepetitions;
+	self.weight = weight;
 
 	return self;
 }
 
-+ (instancetype)exerciseWithName:(NSString *)name numberOfSets:(NSInteger)numOfSets numberOfRepetitions:(NSInteger)numOfRepetitions duration:(NSInteger)duration {
-	return [[self alloc] initWithName:name numeberOfSets:numOfSets numberOfRepetitions:numOfRepetitions duration:duration];
++ (instancetype)exerciseWithName:(NSString *)name numberOfSets:(NSInteger)numOfSets numberOfRepetitions:(NSInteger)numOfRepetitions weight:(NSInteger)weight {
+	return [[self alloc] initWithName:name numeberOfSets:numOfSets numberOfRepetitions:numOfRepetitions weight:weight];
 }
 
 @end

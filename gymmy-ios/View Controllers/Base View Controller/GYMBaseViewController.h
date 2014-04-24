@@ -5,5 +5,4 @@
 #import <Foundation/Foundation.h>
 
 @interface GYMBaseViewController : UIViewController
-@property(nonatomic, strong) UITableView *tableView;
 @end

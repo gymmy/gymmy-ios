@@ -11,7 +11,7 @@
 	NSAttributedString *exerciseName = [[NSAttributedString alloc] initWithString:exercise.name];
 	NSAttributedString *numOfSets = [[NSAttributedString alloc] initWithString:[@(exercise.numberOfSets) stringValue]];
 	NSAttributedString *numOfRep = [[NSAttributedString alloc] initWithString:[@(exercise.numberOfRepetitions) stringValue]];
-	NSAttributedString *duration = [[NSAttributedString alloc] initWithString:[@(exercise.duration) stringValue]];
+	NSAttributedString *duration = [[NSAttributedString alloc] initWithString:[@(exercise.weight) stringValue]];
 
 	self.exerciseNameLabel.attributedText = exerciseName;
 	self.numberOfRepetitionsLabel.attributedText = numOfRep;

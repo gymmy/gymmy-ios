@@ -4,11 +4,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GYMBaseViewController.h"
+#import "GYMBaseTableViewController.h"
 
 @class GYMExerciseListVCViewModel;
 
-@interface GYMExerciseListViewController : GYMBaseViewController <UITableViewDelegate, UITableViewDataSource>
+@interface GYMExerciseListViewController : GYMBaseTableViewController
 @property(nonatomic, strong) IBOutlet UITableView *tableView;
 @property(nonatomic, strong) GYMExerciseListVCViewModel *viewModel;
 @end

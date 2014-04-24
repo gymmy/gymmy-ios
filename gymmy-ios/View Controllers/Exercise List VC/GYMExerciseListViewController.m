@@ -7,6 +7,8 @@
 #import "GYMExerciseListVCViewModel.h"
 #import "GYMExerciseListTableViewCell.h"
 #import "GYMExercise.h"
+#import "GYMExerciseDetailViewController.h"
+#import "GYMExerciseDetailViewModel.h"
 
 @implementation GYMExerciseListViewController
 
@@ -33,13 +35,6 @@
 	self.viewModel = [GYMExerciseListVCViewModel new];
 }
 
-#pragma mark - view lifecycle -
-- (void)viewDidLoad {
-	[super viewDidLoad];
-	self.tableView.dataSource = self;
-	self.tableView.delegate = self;
-}
-
 #pragma mark - UITableViewDataSource Methods -
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	return [self.viewModel numberOfRows];
@@ -52,6 +47,20 @@
 	[cell configureCellForExercise:exercise];
 
 	return cell;
+}
+
+#pragma mark - prepareForSegue -
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+	[super prepareForSegue:segue sender:sender];
+
+	NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+	GYMExercise *exercise = [self.viewModel exerciseForIndexPath:indexPath];
+
+	if ([segue.identifier isEqualToString:@"ExerciseDetailSegue"]) {
+		GYMExerciseDetailViewController *vc = segue.destinationViewController;
+		vc.viewModel.exercise = exercise;
+		vc.title = exercise.name;
+	}
 }
 
 @end

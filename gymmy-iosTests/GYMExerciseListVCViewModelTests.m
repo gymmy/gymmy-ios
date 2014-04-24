@@ -32,7 +32,7 @@
 
 - (void)setUp {
 	vm = [GYMExerciseListVCViewModel new];
-	GYMExercise *test = [GYMExercise exerciseWithName:@"Test" numberOfSets:1 numberOfRepetitions:1 duration:10];
+	GYMExercise *test = [GYMExercise exerciseWithName:@"Test" numberOfSets:1 numberOfRepetitions:1 weight:10];
 	GYMWorkout *workout = [[GYMWorkout alloc] initWithName:@"Test Workout" exercises:@[test]];
 	vm.workout = workout;
 }

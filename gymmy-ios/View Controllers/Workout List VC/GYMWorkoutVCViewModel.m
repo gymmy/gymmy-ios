@@ -23,12 +23,12 @@
 }
 
 - (void)setupDummyData {
-	GYMExercise *squats = [GYMExercise exerciseWithName:@"Squats" numberOfSets:3 numberOfRepetitions:8 duration:96];
-	GYMExercise *benchPress = [GYMExercise exerciseWithName:@"Bench press" numberOfSets:3 numberOfRepetitions:8 duration:80];
-	GYMExercise *militaryPress = [GYMExercise exerciseWithName:@"Military press" numberOfSets:2 numberOfRepetitions:15 duration:15];
-	GYMExercise *classicPushUps = [GYMExercise exerciseWithName:@"Classic push ups" numberOfSets:3 numberOfRepetitions:15 duration:0];
-	GYMExercise *deadLifts = [GYMExercise exerciseWithName:@"Dead lifts" numberOfSets:3 numberOfRepetitions:15 duration:150];
-	GYMExercise *bizepsCurls = [GYMExercise exerciseWithName:@"Bizeps curls" numberOfSets:3 numberOfRepetitions:15 duration:22];
+	GYMExercise *squats = [GYMExercise exerciseWithName:@"Squats" numberOfSets:3 numberOfRepetitions:8 weight:96];
+	GYMExercise *benchPress = [GYMExercise exerciseWithName:@"Bench press" numberOfSets:3 numberOfRepetitions:8 weight:80];
+	GYMExercise *militaryPress = [GYMExercise exerciseWithName:@"Military press" numberOfSets:2 numberOfRepetitions:15 weight:15];
+	GYMExercise *classicPushUps = [GYMExercise exerciseWithName:@"Classic push ups" numberOfSets:3 numberOfRepetitions:15 weight:0];
+	GYMExercise *deadLifts = [GYMExercise exerciseWithName:@"Dead lifts" numberOfSets:3 numberOfRepetitions:15 weight:150];
+	GYMExercise *bizepsCurls = [GYMExercise exerciseWithName:@"Bizeps curls" numberOfSets:3 numberOfRepetitions:15 weight:22];
 
 	GYMWorkout *fullBody = [[GYMWorkout alloc] initWithName:@"Full Body" exercises:
 			@[squats, benchPress, militaryPress, classicPushUps, deadLifts, bizepsCurls]];

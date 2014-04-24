@@ -35,19 +35,6 @@
 	self.viewModel = [GYMWorkoutVCViewModel new];
 }
 
-#pragma mark - View lifecycle -
-- (void)viewWillAppear:(BOOL)animated {
-	[super viewWillAppear:animated];
-	[self.tableView reloadData];
-}
-
-- (void)viewDidLoad {
-	[super viewDidLoad];
-
-	self.tableView.dataSource = self;
-	self.tableView.delegate = self;
-}
-
 #pragma mark - prepareForSegue -
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 	[super prepareForSegue:segue sender:sender];

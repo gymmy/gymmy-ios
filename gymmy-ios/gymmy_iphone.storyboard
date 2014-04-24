@@ -97,10 +97,11 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D7O-5q-MMP">
-                                <rect key="frame" x="75" y="482" width="172" height="41"/>
+                                <rect key="frame" x="47" y="472" width="228" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.44705882349999998" green="0.90980392160000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal">
+                                <inset key="contentEdgeInsets" minX="28" minY="11" maxX="28" maxY="11"/>
+                                <state key="normal" backgroundImage="Button">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Add new workout">
                                             <attributes>
@@ -246,6 +247,7 @@
                                             <outlet property="exerciseNameLabel" destination="uWH-Sh-7Ln" id="oPo-ga-tx7"/>
                                             <outlet property="numberOfRepetitionsLabel" destination="vys-lF-jUU" id="MwR-Lk-Jh7"/>
                                             <outlet property="numberOfSetsLabel" destination="O1B-uE-r35" id="qFb-XK-aln"/>
+                                            <segue destination="JhW-qX-05F" kind="push" identifier="ExerciseDetailSegue" id="RPH-qi-5sK"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -273,6 +275,182 @@
             </objects>
             <point key="canvasLocation" x="870" y="114"/>
         </scene>
+        <!--Exercise Detail View Controller-->
+        <scene sceneID="Cbe-fc-rnW">
+            <objects>
+                <viewController id="JhW-qX-05F" customClass="GYMExerciseDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2V4-id-HXQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="a26-rf-exf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E6l-PY-8fC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vp4-73-ldt">
+                                <rect key="frame" x="102" y="222" width="117" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="96">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="90" name="AvenirNext-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k7u-HC-MgO">
+                                <rect key="frame" x="30" y="264" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="L78-t5-i95"/>
+                                    <constraint firstAttribute="width" constant="40" id="zFV-SB-2do"/>
+                                </constraints>
+                                <color key="tintColor" red="0.44705882349999998" green="0.90980392160000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="-">
+                                            <attributes>
+                                                <color key="NSColor" red="0.44705882349999998" green="0.90980392160000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="21" name="AvenirNext-Medium"/>
+                                                <font key="NSOriginalFont" size="21" name="AvenirNext-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X61-Nf-4ww">
+                                <rect key="frame" x="250" y="264" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="A4L-22-kSG"/>
+                                    <constraint firstAttribute="height" constant="40" id="WA9-o1-fYJ"/>
+                                </constraints>
+                                <color key="tintColor" red="0.44705882349999998" green="0.90980392160000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="+">
+                                            <attributes>
+                                                <color key="NSColor" red="0.44705882349999998" green="0.90980392160000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="21" name="AvenirNext-Medium"/>
+                                                <font key="NSOriginalFont" size="21" name="AvenirNext-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kB0-zK-M0E">
+                                <rect key="frame" x="51" y="472" width="218" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.44705882349999998" green="0.90980392160000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="28" minY="11" maxX="28" maxY="11"/>
+                                <state key="normal" backgroundImage="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Confirm exercise">
+                                            <attributes>
+                                                <color key="NSColor" red="0.44705882352941173" green="0.90980392156862744" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="21" name="AvenirNext-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXg-Ol-w83">
+                                <rect key="frame" x="153" y="84" width="54" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="sets">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="30" name="AvenirNext-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCO-P3-IVu">
+                                <rect key="frame" x="110" y="84" width="35" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="13">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="30" name="AvenirNext-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMF-Gi-vTg">
+                                <rect key="frame" x="153" y="133" width="60" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="reps">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="30" name="AvenirNext-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQx-aO-mEM">
+                                <rect key="frame" x="127" y="133" width="18" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="8">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="30" name="AvenirNext-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a26-rf-exf" firstAttribute="top" secondItem="kB0-zK-M0E" secondAttribute="bottom" constant="45" id="95D-5P-l3B"/>
+                            <constraint firstItem="EXg-Ol-w83" firstAttribute="leading" secondItem="YCO-P3-IVu" secondAttribute="trailing" constant="8" symbolic="YES" id="D2L-cw-dbB"/>
+                            <constraint firstAttribute="centerY" secondItem="X61-Nf-4ww" secondAttribute="centerY" id="DLS-gt-gm1"/>
+                            <constraint firstAttribute="centerX" secondItem="kB0-zK-M0E" secondAttribute="centerX" id="Gos-zX-Cxj"/>
+                            <constraint firstAttribute="trailing" secondItem="X61-Nf-4ww" secondAttribute="trailing" constant="30" id="JXJ-oH-0Hr"/>
+                            <constraint firstAttribute="centerY" secondItem="k7u-HC-MgO" secondAttribute="centerY" id="L4L-UN-r9h"/>
+                            <constraint firstItem="FQx-aO-mEM" firstAttribute="top" secondItem="YCO-P3-IVu" secondAttribute="bottom" constant="8" symbolic="YES" id="M4e-fZ-gTH"/>
+                            <constraint firstItem="FQx-aO-mEM" firstAttribute="trailing" secondItem="YCO-P3-IVu" secondAttribute="trailing" id="Q1N-gJ-zv2"/>
+                            <constraint firstItem="k7u-HC-MgO" firstAttribute="leading" secondItem="E6l-PY-8fC" secondAttribute="leading" constant="30" id="QGp-ly-MV0"/>
+                            <constraint firstItem="EXg-Ol-w83" firstAttribute="baseline" secondItem="YCO-P3-IVu" secondAttribute="baseline" id="T58-6h-kYm"/>
+                            <constraint firstItem="cMF-Gi-vTg" firstAttribute="leading" secondItem="EXg-Ol-w83" secondAttribute="leading" id="UrS-fI-Ty8"/>
+                            <constraint firstItem="cMF-Gi-vTg" firstAttribute="top" secondItem="EXg-Ol-w83" secondAttribute="bottom" constant="8" symbolic="YES" id="WGa-p7-6k6"/>
+                            <constraint firstAttribute="centerX" secondItem="EXg-Ol-w83" secondAttribute="centerX" constant="-20" id="fod-Kq-olr"/>
+                            <constraint firstItem="EXg-Ol-w83" firstAttribute="top" secondItem="2V4-id-HXQ" secondAttribute="bottom" constant="20" id="fzP-Nf-dlj"/>
+                            <constraint firstAttribute="centerY" secondItem="Vp4-73-ldt" secondAttribute="centerY" constant="0.5" id="lYe-oJ-h4D"/>
+                            <constraint firstAttribute="centerX" secondItem="Vp4-73-ldt" secondAttribute="centerX" id="zcx-5g-p9J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Kxn-6h-ycJ"/>
+                    <connections>
+                        <outlet property="confirmExerciseButton" destination="kB0-zK-M0E" id="DbI-NN-orH"/>
+                        <outlet property="minusWeightButton" destination="k7u-HC-MgO" id="aJS-EI-oGy"/>
+                        <outlet property="numberOfRepsLabel" destination="FQx-aO-mEM" id="eWp-HT-2qX"/>
+                        <outlet property="numberOfSetsLabel" destination="YCO-P3-IVu" id="YsA-3h-5ej"/>
+                        <outlet property="plusWeightButton" destination="X61-Nf-4ww" id="t0u-fv-ZmR"/>
+                        <outlet property="weightLabel" destination="Vp4-73-ldt" id="1NQ-ij-2Sy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="66c-83-0iJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1278" y="114"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="eFO-8E-99g">
             <objects>
@@ -292,6 +470,9 @@
             <point key="canvasLocation" x="8" y="114"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Button" width="20" height="20"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

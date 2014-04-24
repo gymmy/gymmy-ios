@@ -10,9 +10,9 @@
 @property(nonatomic, copy) NSString *name;
 @property(assign) NSInteger numberOfSets;
 @property(assign) NSInteger numberOfRepetitions;
-@property(assign) NSInteger duration;
+@property(assign) NSInteger weight;
 
-- (instancetype)initWithName:(NSString *)name numeberOfSets:(NSInteger)numOfSets numberOfRepetitions:(NSInteger)numOfrepetitions duration:(NSInteger)duration;
+- (instancetype)initWithName:(NSString *)name numeberOfSets:(NSInteger)numOfSets numberOfRepetitions:(NSInteger)numOfRepetitions weight:(NSInteger)weight;
 
-+ (instancetype)exerciseWithName:(NSString *)name numberOfSets:(NSInteger)numOfSets numberOfRepetitions:(NSInteger)numOfRepetitions duration:(NSInteger)duration;
++ (instancetype)exerciseWithName:(NSString *)name numberOfSets:(NSInteger)numOfSets numberOfRepetitions:(NSInteger)numOfRepetitions weight:(NSInteger)weight;
 @end
