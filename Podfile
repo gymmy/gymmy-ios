@@ -4,7 +4,7 @@ pod 'ReactiveCocoa'
 pod 'FLKAutoLayout'
 
 target :'gymmy-iosTests', :exclusive => true do
-  pod 'OCHamcrest'
+  pod 'Kiwi/XCTest'
 end
 
 inhibit_all_warnings!

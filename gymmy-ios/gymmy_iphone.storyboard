@@ -7,7 +7,7 @@
         <!--Gymmy Main View Controller-->
         <scene sceneID="deI-Nw-9VX">
             <objects>
-                <viewController id="r0o-Kd-2kZ" userLabel="Gymmy Main View Controller" customClass="GYMWorkoutViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GYMWorkoutViewController" id="r0o-Kd-2kZ" userLabel="Gymmy Main View Controller" customClass="GYMWorkoutViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="95c-T1-aVl"/>
                         <viewControllerLayoutGuide type="bottom" id="1Is-Q0-owS"/>
@@ -301,7 +301,7 @@
         <!--Exercise List View Controller - Exercises-->
         <scene sceneID="vXk-nv-cYf">
             <objects>
-                <viewController id="uMJ-zR-tAC" customClass="GYMExerciseListViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GYMExerciseListViewController" id="uMJ-zR-tAC" customClass="GYMExerciseListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tj5-ye-ODx"/>
                         <viewControllerLayoutGuide type="bottom" id="0Wg-tD-IkD"/>
@@ -525,6 +525,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <segue destination="xKa-gZ-PxL" kind="modal" identifier="IncreaseWeightSegue" animates="NO" id="oRP-9s-zhF"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXg-Ol-w83">
                                 <rect key="frame" x="153" y="84" width="54" height="41"/>
@@ -616,6 +619,102 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66c-83-0iJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1278" y="114"/>
+        </scene>
+        <!--Increase Weight View Controller-->
+        <scene sceneID="bP3-oK-lVU">
+            <objects>
+                <viewController id="xKa-gZ-PxL" customClass="GYMIncreaseWeightViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yKR-MA-Ap9"/>
+                        <viewControllerLayoutGuide type="bottom" id="wSZ-kC-Zlg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sjg-hk-vXA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MgS-Vg-hkG" userLabel="normal image view">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="maw-ci-ZFB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="2NE-48-vrr">
+                                <rect key="frame" x="20" y="70" width="280" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Increase weight next time?">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="44" name="AvenirNext-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gRQ-1b-krO">
+                                <rect key="frame" x="102" y="413" width="116" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.44705882349999998" green="0.90980392160000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Yeah do it">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="AvenirNext-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qOa-NB-0yp">
+                                <rect key="frame" x="54" y="498" width="212" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="No god, please no">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="AvenirNext-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="maw-ci-ZFB" firstAttribute="centerX" secondItem="qOa-NB-0yp" secondAttribute="centerX" id="2Ln-fA-0Rk"/>
+                            <constraint firstItem="wSZ-kC-Zlg" firstAttribute="top" secondItem="maw-ci-ZFB" secondAttribute="bottom" id="4gv-zG-Wkv"/>
+                            <constraint firstItem="maw-ci-ZFB" firstAttribute="top" secondItem="Sjg-hk-vXA" secondAttribute="top" id="5Pp-Gw-aVH"/>
+                            <constraint firstItem="maw-ci-ZFB" firstAttribute="leading" secondItem="Sjg-hk-vXA" secondAttribute="leading" id="73R-mQ-7XK"/>
+                            <constraint firstAttribute="trailing" secondItem="maw-ci-ZFB" secondAttribute="trailing" id="Chw-rd-Zfe"/>
+                            <constraint firstItem="2NE-48-vrr" firstAttribute="top" secondItem="yKR-MA-Ap9" secondAttribute="bottom" constant="50" id="DxA-Ka-znJ"/>
+                            <constraint firstItem="MgS-Vg-hkG" firstAttribute="leading" secondItem="Sjg-hk-vXA" secondAttribute="leading" id="J8i-kX-OZI"/>
+                            <constraint firstAttribute="trailing" secondItem="MgS-Vg-hkG" secondAttribute="trailing" id="OdQ-A0-rLs"/>
+                            <constraint firstItem="qOa-NB-0yp" firstAttribute="top" secondItem="maw-ci-ZFB" secondAttribute="bottom" constant="-70" id="R8d-M7-wf8"/>
+                            <constraint firstAttribute="trailing" secondItem="2NE-48-vrr" secondAttribute="trailing" constant="20" id="cmH-ki-3rJ"/>
+                            <constraint firstItem="2NE-48-vrr" firstAttribute="leading" secondItem="Sjg-hk-vXA" secondAttribute="leading" constant="20" id="fxO-nQ-lqT"/>
+                            <constraint firstItem="wSZ-kC-Zlg" firstAttribute="top" secondItem="MgS-Vg-hkG" secondAttribute="bottom" id="jg6-1e-8e3"/>
+                            <constraint firstItem="gRQ-1b-krO" firstAttribute="centerX" secondItem="qOa-NB-0yp" secondAttribute="centerX" id="l1R-ri-eL2"/>
+                            <constraint firstItem="qOa-NB-0yp" firstAttribute="top" secondItem="gRQ-1b-krO" secondAttribute="bottom" constant="40" id="tRm-av-zCw"/>
+                            <constraint firstItem="MgS-Vg-hkG" firstAttribute="top" secondItem="Sjg-hk-vXA" secondAttribute="top" id="wWI-pR-v9b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="maw-ci-ZFB" id="4z3-Ou-sGS"/>
+                        <outlet property="headerTextLabel" destination="2NE-48-vrr" id="1i6-KC-mxZ"/>
+                        <outlet property="noDontIncreaseWeightButton" destination="qOa-NB-0yp" id="sFo-v8-n2W"/>
+                        <outlet property="normalBackgroundImageView" destination="MgS-Vg-hkG" id="GZS-GD-Vb7"/>
+                        <outlet property="yesIncreaseWeightButton" destination="gRQ-1b-krO" id="kOz-rT-sZj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MQG-hc-9Iu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1274" y="803"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eFO-8E-99g">

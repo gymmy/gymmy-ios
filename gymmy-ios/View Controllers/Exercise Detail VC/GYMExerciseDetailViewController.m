@@ -6,6 +6,8 @@
 #import "GYMExerciseDetailViewController.h"
 #import "GYMExerciseDetailViewModel.h"
 #import "ReactiveCocoa/ReactiveCocoa.h"
+#import "GYMIncreaseWeightViewController.h"
+#import "UIView+GYMMYAdditions.h"
 
 @interface GYMExerciseDetailViewController ()
 @property(weak, nonatomic) IBOutlet UILabel *numberOfSetsLabel;
@@ -46,6 +48,15 @@
 	RAC(self.numberOfRepsLabel, text) = RACObserve(self.viewModel, numberOfRepetitions);
 	RAC(self.numberOfSetsLabel, text) = RACObserve(self.viewModel, numberOfSets);
 	RAC(self.weightLabel, text) = RACObserve(self.viewModel, weight);
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+	[super prepareForSegue:segue sender:sender];
+
+	if ([segue.identifier isEqualToString:@"IncreaseWeightSegue"]) {
+		GYMIncreaseWeightViewController *vc = segue.destinationViewController;
+		vc.backgroundImage = [[[UIScreen mainScreen] snapshotViewAfterScreenUpdates:YES] gym_snapshot];
+	}
 }
 
 @end
