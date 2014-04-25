@@ -1,8 +1,3 @@
-//
-// Created by Friedrich Pfitzmann on 21.04.14.
-// Copyright (c) 2014 Pfitzmann Software Solutions - Friedrich Pfitzmann. All rights reserved.
-//
-
 #import "UIView+FLKAutoLayout.h"
 #import "UIColor+GYMColor.h"
 #import "GYMBaseViewController.h"

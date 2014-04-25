@@ -1,10 +1,4 @@
-//
-// Created by Friedrich Pfitzmann on 20.04.14.
-// Copyright (c) 2014 Pfitzmann Software Solutions - Friedrich Pfitzmann. All rights reserved.
-//
-
 #import "GYMExercise.h"
-
 
 @implementation GYMExercise
 - (instancetype)initWithName:(NSString *)name numeberOfSets:(NSInteger)numOfSets numberOfRepetitions:(NSInteger)numOfRepetitions weight:(NSInteger)weight {

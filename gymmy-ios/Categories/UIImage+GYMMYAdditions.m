@@ -1,12 +1,8 @@
-//
-// Created by Friedrich Pfitzmann on 25.04.14.
-// Copyright (c) 2014 Pfitzmann Software Solutions - Friedrich Pfitzmann. All rights reserved.
-//
-
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wconversion"
 
 #import "UIImage+GYMMYAdditions.h"
+
 @import Accelerate;
 
 @implementation UIImage (GYMMYAdditions)

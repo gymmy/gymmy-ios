@@ -1,8 +1,3 @@
-//
-// Created by Friedrich Pfitzmann on 21.04.14.
-// Copyright (c) 2014 Pfitzmann Software Solutions - Friedrich Pfitzmann. All rights reserved.
-//
-
 #import "GYMExerciseListViewController.h"
 #import "GYMExerciseListVCViewModel.h"
 #import "GYMExerciseListTableViewCell.h"
@@ -13,6 +8,7 @@
 @implementation GYMExerciseListViewController
 
 #pragma mark - initialization -
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 	if (!self) return nil;
@@ -36,6 +32,7 @@
 }
 
 #pragma mark - UITableViewDataSource Methods -
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	return [self.viewModel numberOfRows];
 }
@@ -50,6 +47,7 @@
 }
 
 #pragma mark - prepareForSegue -
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 	[super prepareForSegue:segue sender:sender];
 

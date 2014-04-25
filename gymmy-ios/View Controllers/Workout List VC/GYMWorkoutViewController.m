@@ -1,8 +1,3 @@
-//
-// Created by Friedrich Pfitzmann on 20.04.14.
-// Copyright (c) 2014 Pfitzmann Software Solutions - Friedrich Pfitzmann. All rights reserved.
-//
-
 #import "GYMWorkoutViewController.h"
 #import "GYMWorkoutVCViewModel.h"
 #import "GYMExerciseListViewController.h"
@@ -36,6 +31,7 @@
 }
 
 #pragma mark - prepareForSegue -
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 	[super prepareForSegue:segue sender:sender];
 
@@ -50,6 +46,7 @@
 }
 
 #pragma mark - UITableViewDataSource methods
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	return [self.viewModel numberOfRows];
 }

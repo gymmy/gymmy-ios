@@ -1,8 +1,3 @@
-//
-// Created by Friedrich Pfitzmann on 25.04.14.
-// Copyright (c) 2014 Pfitzmann Software Solutions - Friedrich Pfitzmann. All rights reserved.
-//
-
 #import "GYMWorkoutViewController.h"
 #import "GYMWorkoutVCViewModel.h"
 #import <Kiwi/Kiwi.h>
