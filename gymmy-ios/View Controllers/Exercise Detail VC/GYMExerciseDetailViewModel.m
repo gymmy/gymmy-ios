@@ -7,7 +7,7 @@
 #import "GYMExercise.h"
 
 @interface GYMExerciseDetailViewModel ()
-@property(nonatomic, copy, readwrite) NSString *κexerciseName;
+@property(nonatomic, copy, readwrite) NSString *exerciseName;
 @property(nonatomic, copy, readwrite) NSString *numberOfRepetitions;
 @property(nonatomic, copy, readwrite) NSString *numberOfSets;
 @property(nonatomic, copy, readwrite) NSString *weight;
