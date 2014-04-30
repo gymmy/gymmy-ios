@@ -4,6 +4,7 @@
 #import "GYMExercise.h"
 #import "GYMExerciseDetailViewController.h"
 #import "GYMExerciseDetailViewModel.h"
+#import "GYMExerciseListTableViewCellModel.h"
 
 @implementation GYMExerciseListViewController
 
@@ -41,7 +42,7 @@
 	GYMExerciseListTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"ExerciseCellIdentifier"
 	                                                                          forIndexPath:indexPath];
 	GYMExercise *exercise = [self.viewModel exerciseForIndexPath:indexPath];
-	[cell configureCellForExercise:exercise];
+	cell.viewModel.exercise = exercise;
 
 	return cell;
 }

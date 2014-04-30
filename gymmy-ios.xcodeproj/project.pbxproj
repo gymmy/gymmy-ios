@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65A3E05C35000E587216FDF2 /* GYMExerciseListTableViewCellModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E7B58C639286DE177EA8 /* GYMExerciseListTableViewCellModelSpec.m */; };
 		65A3E0C545E00EA94E7E3740 /* GYMExerciseListVCViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E0244098BE99F6A762F8 /* GYMExerciseListVCViewModel.m */; };
+		65A3E11D7CC3476A41F55632 /* GYMWorkoutTableViewCellModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3EFFE43D97162B8773C28 /* GYMWorkoutTableViewCellModelSpec.m */; };
 		65A3E1327C07787D577A39C6 /* GYMExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E840933C5CF27A410878 /* GYMExercise.m */; };
+		65A3E2FDD164927AC8F3D839 /* GYMExerciseListTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3EF5DEE6EB9C437F77784 /* GYMExerciseListTableViewCellModel.m */; };
 		65A3E2FEC7C6D5DAA8F34CC8 /* GYMWorkoutVCViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E046C3CF52CFDF89BF7D /* GYMWorkoutVCViewModel.m */; };
 		65A3E39572F7B662BE29443D /* GYMBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3EB8968AF750B0929C535 /* GYMBaseTableViewController.m */; };
+		65A3E397270ED9EB5DB5449C /* GYMAddWorkoutViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3EAA3EF303C3FB560099F /* GYMAddWorkoutViewModelSpec.m */; };
 		65A3E3C25E2A0799A24E9ACF /* GYMWorkoutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E1459340633CC9779427 /* GYMWorkoutTableViewCell.m */; };
 		65A3E433FACA829B3667AD50 /* GYMIncreaseWeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3EC4FBE015F47AA14AE7C /* GYMIncreaseWeightViewController.m */; };
 		65A3E5D64A21DCD04856173C /* GYMWorkoutVCViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E427DF96E7592CC35E7D /* GYMWorkoutVCViewModelSpec.m */; };
@@ -24,6 +28,8 @@
 		65A3E9C7886E5D7BFAD46BB7 /* GYMExerciseListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E73083F0E47083421CC3 /* GYMExerciseListTableViewCell.m */; };
 		65A3EAE57E0CF9548F3FD04B /* GYMExerciseDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E9441486ED64AABAA57B /* GYMExerciseDetailViewModel.m */; };
 		65A3EAF30B2EC119BD4012F9 /* UIView+GYMMYAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E0858FA6E7F669BE39A0 /* UIView+GYMMYAdditions.m */; };
+		65A3EB266C52820ECD20EE2F /* GYMBaseTableViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E2A4B3BF9220E0521DA8 /* GYMBaseTableViewControllerSpec.m */; };
+		65A3EC5C6796DE02A3C09146 /* GYMIncreaseWeightViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E3BCAC5C0636A1086357 /* GYMIncreaseWeightViewModel.m */; };
 		65A3EC7138CD4FBC9F7FFCBF /* GYMExerciseDetailViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E70EC0311C1641AB37B1 /* GYMExerciseDetailViewModelSpec.m */; };
 		65A3ECC8F706FA0838151387 /* GYMExerciseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E34EF417AF06A1E25270 /* GYMExerciseListViewController.m */; };
 		65A3EDD696E58256C9936089 /* GYMWorkout.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3EFAF80AB71E58E92CB07 /* GYMWorkout.m */; };
@@ -44,6 +50,7 @@
 		978EA7161903A7C100651DD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 978EA6FB1903A7C100651DD3 /* Foundation.framework */; };
 		978EA7171903A7C100651DD3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 978EA6FF1903A7C100651DD3 /* UIKit.framework */; };
 		978EA71F1903A7C100651DD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 978EA71D1903A7C100651DD3 /* InfoPlist.strings */; };
+		9793658E191102F9008809AA /* GYMWorkoutTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A3E2EA4D35072158328111 /* GYMWorkoutTableViewCellModel.m */; };
 		A5778505E7484D5AA8294E5A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF1AE2501484F16A5FA730A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +67,7 @@
 /* Begin PBXFileReference section */
 		65A3E0244098BE99F6A762F8 /* GYMExerciseListVCViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMExerciseListVCViewModel.m; sourceTree = "<group>"; };
 		65A3E02689A6418E85CB33D4 /* GYMWorkout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMWorkout.h; sourceTree = "<group>"; };
+		65A3E041E7E20D438EB43E0B /* GYMWorkoutTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMWorkoutTableViewCellModel.h; sourceTree = "<group>"; };
 		65A3E046C3CF52CFDF89BF7D /* GYMWorkoutVCViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMWorkoutVCViewModel.m; sourceTree = "<group>"; };
 		65A3E083529D3633C4BE5DBC /* GYMAddWorkoutViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMAddWorkoutViewModel.m; sourceTree = "<group>"; };
 		65A3E0858FA6E7F669BE39A0 /* UIView+GYMMYAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GYMMYAdditions.m"; sourceTree = "<group>"; };
@@ -67,8 +75,11 @@
 		65A3E1459340633CC9779427 /* GYMWorkoutTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMWorkoutTableViewCell.m; sourceTree = "<group>"; };
 		65A3E21D87B55358E376B49C /* GYMExerciseListVCViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMExerciseListVCViewModel.h; sourceTree = "<group>"; };
 		65A3E22995FE63295E3FB6E8 /* GYMWorkoutViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMWorkoutViewControllerSpec.m; sourceTree = "<group>"; };
+		65A3E2A4B3BF9220E0521DA8 /* GYMBaseTableViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMBaseTableViewControllerSpec.m; sourceTree = "<group>"; };
+		65A3E2EA4D35072158328111 /* GYMWorkoutTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMWorkoutTableViewCellModel.m; sourceTree = "<group>"; };
 		65A3E34EF417AF06A1E25270 /* GYMExerciseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMExerciseListViewController.m; sourceTree = "<group>"; };
 		65A3E36A6479A5FB32B334EC /* GYMWorkoutTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMWorkoutTableViewCell.h; sourceTree = "<group>"; };
+		65A3E3BCAC5C0636A1086357 /* GYMIncreaseWeightViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMIncreaseWeightViewModel.m; sourceTree = "<group>"; };
 		65A3E427DF96E7592CC35E7D /* GYMWorkoutVCViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMWorkoutVCViewModelSpec.m; sourceTree = "<group>"; };
 		65A3E46307DF2269DF213C2C /* GYMWorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMWorkoutViewController.m; sourceTree = "<group>"; };
 		65A3E5E7E46F13D4CFDC217F /* GYMExerciseListViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMExerciseListViewControllerSpec.m; sourceTree = "<group>"; };
@@ -76,16 +87,19 @@
 		65A3E70EC0311C1641AB37B1 /* GYMExerciseDetailViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMExerciseDetailViewModelSpec.m; sourceTree = "<group>"; };
 		65A3E73083F0E47083421CC3 /* GYMExerciseListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMExerciseListTableViewCell.m; sourceTree = "<group>"; };
 		65A3E75C5A891131060BDDA9 /* GYMExerciseListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMExerciseListTableViewCell.h; sourceTree = "<group>"; };
+		65A3E7B58C639286DE177EA8 /* GYMExerciseListTableViewCellModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMExerciseListTableViewCellModelSpec.m; sourceTree = "<group>"; };
 		65A3E840933C5CF27A410878 /* GYMExercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMExercise.m; sourceTree = "<group>"; };
 		65A3E84A5EDAFC8EDEF1C248 /* GYMExerciseListVCViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMExerciseListVCViewModelSpec.m; sourceTree = "<group>"; };
 		65A3E850BE8F29272850379E /* GYMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMBaseViewController.h; sourceTree = "<group>"; };
 		65A3E8885880FBD8E033A8A8 /* GYMExerciseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMExerciseDetailViewController.m; sourceTree = "<group>"; };
 		65A3E89C09B0020CE44353ED /* GYMIncreaseWeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMIncreaseWeightViewController.h; sourceTree = "<group>"; };
 		65A3E9441486ED64AABAA57B /* GYMExerciseDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMExerciseDetailViewModel.m; sourceTree = "<group>"; };
+		65A3E950C6C36AC00310716C /* GYMIncreaseWeightViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMIncreaseWeightViewModel.h; sourceTree = "<group>"; };
 		65A3E9543BBB3AF9C0814A52 /* GYMExerciseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMExerciseListViewController.h; sourceTree = "<group>"; };
 		65A3EA0EC8A642AF72FAE620 /* GYMAddWorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMAddWorkoutViewController.h; sourceTree = "<group>"; };
 		65A3EA471A6E97522480ED50 /* GYMExercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMExercise.h; sourceTree = "<group>"; };
 		65A3EAA12D2691DA37181561 /* UIView+GYMMYAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GYMMYAdditions.h"; sourceTree = "<group>"; };
+		65A3EAA3EF303C3FB560099F /* GYMAddWorkoutViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMAddWorkoutViewModelSpec.m; sourceTree = "<group>"; };
 		65A3EB3D1DA1F3151C2FFFD8 /* GYMAddWorkoutViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMAddWorkoutViewModel.h; sourceTree = "<group>"; };
 		65A3EB8968AF750B0929C535 /* GYMBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMBaseTableViewController.m; sourceTree = "<group>"; };
 		65A3EC2963D37E7A79EB5BFE /* GYMWorkoutVCViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMWorkoutVCViewModel.h; sourceTree = "<group>"; };
@@ -98,7 +112,10 @@
 		65A3ED577CDAD3ED5EDB6AC7 /* GYMBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMBaseTableViewController.h; sourceTree = "<group>"; };
 		65A3ED889979145660FE3838 /* UIImage+GYMMYAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GYMMYAdditions.h"; sourceTree = "<group>"; };
 		65A3EE80F79BD783DFC88AA7 /* UIColor+GYMColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GYMColor.h"; sourceTree = "<group>"; };
+		65A3EF5DEE6EB9C437F77784 /* GYMExerciseListTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMExerciseListTableViewCellModel.m; sourceTree = "<group>"; };
 		65A3EFAF80AB71E58E92CB07 /* GYMWorkout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMWorkout.m; sourceTree = "<group>"; };
+		65A3EFD336530EF7425F7A8C /* GYMExerciseListTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYMExerciseListTableViewCellModel.h; sourceTree = "<group>"; };
+		65A3EFFE43D97162B8773C28 /* GYMWorkoutTableViewCellModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYMWorkoutTableViewCellModelSpec.m; sourceTree = "<group>"; };
 		9707508A190A5A080081DC10 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9707508C190A60AE0081DC10 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		970AB8B71903C196008DDA75 /* gymmy_iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = gymmy_iphone.storyboard; sourceTree = "<group>"; };
@@ -159,6 +176,8 @@
 				65A3E46307DF2269DF213C2C /* GYMWorkoutViewController.m */,
 				65A3E36A6479A5FB32B334EC /* GYMWorkoutTableViewCell.h */,
 				65A3E1459340633CC9779427 /* GYMWorkoutTableViewCell.m */,
+				65A3E2EA4D35072158328111 /* GYMWorkoutTableViewCellModel.m */,
+				65A3E041E7E20D438EB43E0B /* GYMWorkoutTableViewCellModel.h */,
 			);
 			path = "Workout List VC";
 			sourceTree = "<group>";
@@ -181,6 +200,8 @@
 			children = (
 				65A3E89C09B0020CE44353ED /* GYMIncreaseWeightViewController.h */,
 				65A3EC4FBE015F47AA14AE7C /* GYMIncreaseWeightViewController.m */,
+				65A3E3BCAC5C0636A1086357 /* GYMIncreaseWeightViewModel.m */,
+				65A3E950C6C36AC00310716C /* GYMIncreaseWeightViewModel.h */,
 			);
 			path = "Increase Weight VC";
 			sourceTree = "<group>";
@@ -194,6 +215,8 @@
 				65A3E75C5A891131060BDDA9 /* GYMExerciseListTableViewCell.h */,
 				65A3E0244098BE99F6A762F8 /* GYMExerciseListVCViewModel.m */,
 				65A3E21D87B55358E376B49C /* GYMExerciseListVCViewModel.h */,
+				65A3EF5DEE6EB9C437F77784 /* GYMExerciseListTableViewCellModel.m */,
+				65A3EFD336530EF7425F7A8C /* GYMExerciseListTableViewCellModel.h */,
 			);
 			path = "Exercise List VC";
 			sourceTree = "<group>";
@@ -326,6 +349,10 @@
 				65A3E5E7E46F13D4CFDC217F /* GYMExerciseListViewControllerSpec.m */,
 				65A3E427DF96E7592CC35E7D /* GYMWorkoutVCViewModelSpec.m */,
 				65A3E22995FE63295E3FB6E8 /* GYMWorkoutViewControllerSpec.m */,
+				65A3E2A4B3BF9220E0521DA8 /* GYMBaseTableViewControllerSpec.m */,
+				65A3EAA3EF303C3FB560099F /* GYMAddWorkoutViewModelSpec.m */,
+				65A3EFFE43D97162B8773C28 /* GYMWorkoutTableViewCellModelSpec.m */,
+				65A3E7B58C639286DE177EA8 /* GYMExerciseListTableViewCellModelSpec.m */,
 			);
 			path = "gymmy-iosTests";
 			sourceTree = "<group>";
@@ -507,6 +534,7 @@
 				978EA7081903A7C100651DD3 /* main.m in Sources */,
 				65A3E8F68BCEED5CA4897CB9 /* UIColor+GYMColor.m in Sources */,
 				65A3EDD696E58256C9936089 /* GYMWorkout.m in Sources */,
+				9793658E191102F9008809AA /* GYMWorkoutTableViewCellModel.m in Sources */,
 				65A3E1327C07787D577A39C6 /* GYMExercise.m in Sources */,
 				65A3EE36B5936A471E2EB677 /* GYMBaseViewController.m in Sources */,
 				65A3ECC8F706FA0838151387 /* GYMExerciseListViewController.m in Sources */,
@@ -523,6 +551,8 @@
 				65A3EAF30B2EC119BD4012F9 /* UIView+GYMMYAdditions.m in Sources */,
 				65A3E81B13685E700B9B00C7 /* UIImage+GYMMYAdditions.m in Sources */,
 				65A3E433FACA829B3667AD50 /* GYMIncreaseWeightViewController.m in Sources */,
+				65A3E2FDD164927AC8F3D839 /* GYMExerciseListTableViewCellModel.m in Sources */,
+				65A3EC5C6796DE02A3C09146 /* GYMIncreaseWeightViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +565,10 @@
 				65A3E6F6A9B8C579BB311D4A /* GYMExerciseListViewControllerSpec.m in Sources */,
 				65A3E5D64A21DCD04856173C /* GYMWorkoutVCViewModelSpec.m in Sources */,
 				65A3E872BD360474D8DDEE55 /* GYMWorkoutViewControllerSpec.m in Sources */,
+				65A3EB266C52820ECD20EE2F /* GYMBaseTableViewControllerSpec.m in Sources */,
+				65A3E397270ED9EB5DB5449C /* GYMAddWorkoutViewModelSpec.m in Sources */,
+				65A3E11D7CC3476A41F55632 /* GYMWorkoutTableViewCellModelSpec.m in Sources */,
+				65A3E05C35000E587216FDF2 /* GYMExerciseListTableViewCellModelSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

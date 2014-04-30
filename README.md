@@ -8,4 +8,4 @@ So far gymmy is using cocoapods for dependency management and uses the follogwin
 
   - [FLKAutoLayout] (https://github.com/floriankugler/FLKAutoLayout)
   - [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa)
-  - [OCHamcrest] (https://github.com/hamcrest/OCHamcrest) 
+  - [Kiwi] (https://github.com/allending/Kiwi)

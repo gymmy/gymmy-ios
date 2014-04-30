@@ -1,16 +1,31 @@
 #import "GYMExerciseListTableViewCell.h"
-#import "GYMExercise.h"
+#import "GYMExerciseListTableViewCellModel.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
+@interface GYMExerciseListTableViewCell ()
+@property(nonatomic, weak) IBOutlet UILabel *exerciseNameLabel;
+@property(nonatomic, weak) IBOutlet UILabel *numberOfSetsLabel;
+@property(nonatomic, weak) IBOutlet UILabel *numberOfRepetitionsLabel;
+@property(nonatomic, weak) IBOutlet UILabel *durationLabel;
+@end
 
 @implementation GYMExerciseListTableViewCell
-- (void)configureCellForExercise:(GYMExercise *)exercise {
-	NSAttributedString *exerciseName = [[NSAttributedString alloc] initWithString:exercise.name];
-	NSAttributedString *numOfSets = [[NSAttributedString alloc] initWithString:[@(exercise.numberOfSets) stringValue]];
-	NSAttributedString *numOfRep = [[NSAttributedString alloc] initWithString:[@(exercise.numberOfRepetitions) stringValue]];
-	NSAttributedString *duration = [[NSAttributedString alloc] initWithString:[@(exercise.weight) stringValue]];
+- (id)initWithCoder:(NSCoder *)coder {
+	self = [super initWithCoder:coder];
+	if (!self) return nil;
 
-	self.exerciseNameLabel.attributedText = exerciseName;
-	self.numberOfRepetitionsLabel.attributedText = numOfRep;
-	self.numberOfSetsLabel.attributedText = numOfSets;
-	self.durationLabel.attributedText = duration;
+	self.viewModel = [GYMExerciseListTableViewCellModel new];
+
+	return self;
 }
+
+- (void)awakeFromNib {
+	[super awakeFromNib];
+
+	RAC(self.exerciseNameLabel, text) = RACObserve(self, viewModel.exerciseName);
+	RAC(self.numberOfSetsLabel, text) = RACObserve(self, viewModel.numberOfSets);
+	RAC(self.numberOfRepetitionsLabel, text) = RACObserve(self, viewModel.numberOfRepetitions);
+	RAC(self.durationLabel, text) = RACObserve(self, viewModel.weight);
+}
+
 @end

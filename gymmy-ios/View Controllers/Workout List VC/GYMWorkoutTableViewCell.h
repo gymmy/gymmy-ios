@@ -1,11 +1,8 @@
 #import <Foundation/Foundation.h>
 
 @class GYMWorkout;
-
+@class GYMWorkoutTableViewCellModel;
 
 @interface GYMWorkoutTableViewCell : UITableViewCell
-@property(nonatomic, strong) IBOutlet UILabel *workoutName;
-@property(nonatomic, strong) IBOutlet UILabel *numberOfExercisesString;
-
-- (void)configureCellForWorkout:(GYMWorkout *)workout;
+@property(nonatomic, strong) GYMWorkoutTableViewCellModel *viewModel;
 @end
