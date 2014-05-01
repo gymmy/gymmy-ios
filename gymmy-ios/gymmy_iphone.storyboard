@@ -112,7 +112,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="Cef-HA-9N0" kind="modal" id="kcU-zY-pu2"/>
+                                    <segue destination="Cef-HA-9N0" kind="modal" identifier="GYMAddWorkoutViewControllerSegue" id="kcU-zY-pu2"/>
                                 </connections>
                             </button>
                         </subviews>

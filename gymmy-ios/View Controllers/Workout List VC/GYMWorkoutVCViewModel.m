@@ -40,4 +40,13 @@
 - (GYMWorkout *)workoutAtIndexPath:(NSIndexPath *)path {
 	return self.workouts[(NSUInteger) [path row]];
 }
+
+- (void)addWorkoutWithName:(NSString *)x {
+	NSMutableArray *tempArray = [self.workouts mutableCopy];
+	GYMExercise *newExercise = [GYMExercise exerciseWithName:@"newExercise" numberOfSets:99 numberOfRepetitions:99 weight:99];
+	GYMWorkout *newWorkout = [GYMWorkout workoutWithName:x
+	                                           exercises:@[newExercise]];
+	[tempArray addObject:newWorkout];
+	self.workouts = [tempArray copy];
+}
 @end

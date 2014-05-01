@@ -5,6 +5,8 @@
 #import "GYMWorkout.h"
 #import "GYMWorkoutTableViewCell.h"
 #import "GYMWorkoutTableViewCellModel.h"
+#import "GYMAddWorkoutViewController.h"
+#import "GYMAddWorkoutViewModel.h"
 
 @implementation GYMWorkoutViewController
 
@@ -43,6 +45,17 @@
 		GYMExerciseListViewController *vc = segue.destinationViewController;
 		vc.viewModel.workout = workout;
 		vc.title = workout.name;
+	}
+
+	@weakify(self);
+	if ([segue.identifier isEqualToString:@"GYMAddWorkoutViewControllerSegue"]) {
+		GYMAddWorkoutViewController *vc = segue.destinationViewController;
+		[vc.viewModel.saveCommand.executionSignals subscribeNext:^(RACSignal *signal) {
+		    [signal subscribeNext:^(NSString *x) {
+			    @strongify(self);
+		        [self.viewModel addWorkoutWithName:x];
+		    }];
+		}];
 	}
 }
 

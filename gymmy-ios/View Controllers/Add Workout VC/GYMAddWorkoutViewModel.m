@@ -12,8 +12,13 @@
 
 	self.saveCommand = [[RACCommand alloc] initWithEnabled:[self enableSaveSignal]
 	                                           signalBlock:^RACSignal *(id input) {
-			    @strongify(self)
-			    return [RACSignal return:self.workoutName];
+			    @strongify(self);
+				RACSignal *signal = [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {
+				    [subscriber sendNext:self.workoutName];
+				    [subscriber sendCompleted];
+				    return nil;
+				}];
+			    return signal;
 			}];
 
 	return self;
@@ -25,4 +30,5 @@
 	}];
 	return enableSaveSignal;
 }
+
 @end
